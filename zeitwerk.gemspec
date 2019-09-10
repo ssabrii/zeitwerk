@@ -10,12 +10,13 @@ Gem::Specification.new do |spec|
     reloading, and eager loading.
   EOS
 
-  spec.author   = "Xavier Noria"
-  spec.email    = 'fxn@hashref.com'
-  spec.license  = "MIT"
-  spec.homepage = "https://github.com/fxn/zeitwerk"
-  spec.files    = Dir.glob("lib/**/*.rb") + ["README.md"]
-  spec.version  = Zeitwerk::VERSION
+  spec.author     = "Xavier Noria"
+  spec.email      = 'fxn@hashref.com'
+  spec.license    = "MIT"
+  spec.homepage   = "https://github.com/fxn/zeitwerk"
+  spec.extensions = %w(ext/zeitwerk/extconf.rb)
+  spec.files      = Dir.glob("lib/**/*.rb") + ["README.md", "ext/zeitwerk/extconf.rb", "ext/zeitwerk/zeitwerk.c"]
+  spec.version    = Zeitwerk::VERSION
 
   spec.required_ruby_version = ">= 2.4.4"
 end

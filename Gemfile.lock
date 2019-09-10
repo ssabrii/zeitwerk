@@ -17,6 +17,8 @@ GEM
       minitest (>= 5.0)
       ruby-progressbar
     rake (12.3.2)
+    rake-compiler (1.0.7)
+      rake
     ruby-progressbar (1.10.0)
 
 PLATFORMS
@@ -27,6 +29,7 @@ DEPENDENCIES
   minitest-focus
   minitest-reporters
   rake
+  rake-compiler
   zeitwerk!
 
 BUNDLED WITH
